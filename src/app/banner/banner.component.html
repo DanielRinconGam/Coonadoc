@@ -1,0 +1,16 @@
+<div class="banner" [ngStyle]="{'background-image': 'url(' + banners[currentIndex].image + ')'}">
+    <div class="overlay"></div>
+    <div class="banner-content">
+      <h1>{{ banners[currentIndex].title }}</h1>
+      <p>{{ banners[currentIndex].text }}</p>
+      <a href="#" class="btn btn-primary banner-btn-primary">Contacto</a>
+      <a href="#" class="btn btn-outline-light banner-btn-secundary">Ver más</a>
+    </div>
+    <div class="gallery-controls">
+      <button *ngFor="let btn of galleryBtns; let i = index" 
+              class="gallery-btn" 
+              [class.active]="i === currentIndex" 
+              (click)="updateBanner(i)">
+      </button>
+    </div>
+  </div>

@@ -1,0 +1,95 @@
+.banner {
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    border-bottom-left-radius: 100% 20%;
+    border-bottom-right-radius: 100% 20%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 4.3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.banner-btn-primary {
+    background-color: #24b223ff !important;
+    color: white;
+    border: none;
+    margin: 10px;
+}
+
+.banner-btn-primary:hover {
+    background-color: #229422ff !important;
+    border: none;
+}
+
+.banner-btn-secundary {
+    background-color: #f1fdf0 !important;
+    color: #24b223ff;
+    border: none;
+    margin: 10px;
+}
+
+.banner-btn-secundary:hover {
+    background-color: #defbdd !important;
+    color: #24b223ff;
+    border: none;
+    margin: 10px;
+}
+
+.gallery-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.gallery-btn {
+    background-color: #defbdd;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    width: 5px;
+    height: 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.gallery-btn.active {
+    background-color: #24b223;
+}
+
+.banner .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.banner .image.active {
+    opacity: 1;
+}
