@@ -1,0 +1,106 @@
+/* Ajuste tarjeta */
+.card {
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    margin: 10px;
+    transform-origin: center center;
+    min-height: 250px;
+}
+
+/* Efecto hover tarjeta */
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    background-color: #ffff;
+}
+
+.card-verde:hover {
+    background-color: #bef6bc;
+}
+
+.card-naranja:hover {
+    background-color: #ffd888; 
+}
+
+/* cuerpo tarjeta */
+.card-body {
+    padding: 1rem;
+    padding-top: 1.5rem;
+}
+
+/* Ajuste imagen */
+.card-img-top {
+    height: 150px;
+    object-fit: contain;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.3s ease;
+    margin-top: 30px;
+}
+
+/* Efecto hover imagen */
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+/* Decoraciones link */
+.card-link {
+    text-decoration: none; 
+    display: block;
+}
+
+/* Mejorar el estilo del título */
+.card-title-verde {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #228B22;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.card-title-naranja {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffa420;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+/* Efecto hover titulo*/
+.card:hover .card-title-verde {
+    color: #062d07;
+    font-size: 1.3rem;
+}
+
+.card:hover .card-title-naranja {
+    color: #461102;
+    font-size: 1.3rem;
+}
+
+
+/* Icono de la flecha */
+.card-title-verde i {
+    font-size: 1.3rem;
+    color: #228B22;
+}
+
+.card-title-narnaja i {
+    font-size: 1.3rem;
+    color: #ffa420;
+}
+
+/* Efecto hover flecha */
+.card:hover .card-title-verde i {
+    color: #062d07;
+}
+
+.card:hover .card-title-naranja i {
+    color: #461102;
+}
+
+.container-fluid  {
+    margin-bottom: 1rem; 
+    margin-top: 1rem; 
+}

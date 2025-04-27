@@ -1,8 +1,9 @@
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 
 @Component({
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   selector: 'app-banner',
   templateUrl: './banner.component.html',
   styleUrls: ['./banner.component.css'],
@@ -14,27 +15,32 @@ export class BannerComponent implements OnInit, OnDestroy {
     {
       image: '/assets/banner_images/banner_1.jpg',
       title: 'Bienvenido a Coonadoc',
-      text: 'Somos una cooperativa de ahorro y crédito que cuenta con talento humano idóneo.'
+      text: 'Somos una cooperativa de ahorro y crédito que cuenta con talento humano idóneo.',
+      link: '/#'
     },
     {
       image: '/assets/banner_images/banner_2.jpg',
       title: 'Accede a créditos',
-      text: 'Coonadoc ofrece créditos con un modelo solidario.'
+      text: 'Coonadoc ofrece créditos con un modelo solidario.',
+      link: '/#'
     },
     {
       image: '/assets/banner_images/banner_3.jpg',
       title: 'Disfruta del turismo',
-      text: 'Coonadoc promueve el bienestar y disfrute de sus afiliados.'
+      text: 'Coonadoc promueve el bienestar y disfrute de sus afiliados.',
+      link: '/#'
     },
     {
       image: '/assets/banner_images/banner_4.jpg',
       title: 'Obtén educación',
-      text: 'Conadoc apoya el acceso a la educación.'
+      text: 'Conadoc apoya el acceso a la educación.',
+      link: '/#'
     },
     {
       image: '/assets/banner_images/banner_5.jpg',
       title: 'Adquiere convenios',
-      text: 'Conadoc establece convenios con diversas entidades.'
+      text: 'Conadoc establece convenios con diversas entidades.',
+      link: '/#'
     }
   ];
 
