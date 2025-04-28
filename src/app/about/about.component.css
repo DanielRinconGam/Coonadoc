@@ -1,87 +1,44 @@
-/* Ajuste tarjeta */
+.box-red {
+    background-color: #FFA420; 
+    color: white;
+}
+
+.box-orange {
+    background-color: #22CC23;
+    color: white;
+}
+
+.box-teal {
+    background-color: #008080; 
+    color: white;
+}
+
+.box-white {
+    background-color: #ffffff; 
+    color: black;
+}
+
+.img-fluid{
+    width: 30%;
+    height: auto;
+}
+
+.text-center {
+    font-size: 1.35rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
 #tittle{
     text-align: center;
     padding: 0.5rem;
     color: #ffa420;
+    font-weight: bold;
 }
 
 #description{
-    text-align: center;
-    padding: 1rem;
-    color: #000;
-}
-
-p{
-    font-size: 1.2rem;
-    color: #000;
-}
-
-.card {
-    border-radius: 5px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    background-color: #fff;
-    position: relative;
-    z-index: 1;
-    margin: 2%;
-    transform-origin: center center;
-    min-height: 250px;
-    display: flex;
-    align-items: center; /* Centra el contenido verticalmente */
-    justify-content: flex-start; /* Alinea los elementos de izquierda a derecha */
-    flex-wrap: wrap; /* Permite que los elementos se ajusten si es necesario */
-}
-
-.card img {
-    width: 10%; /* Ajusta el tamaño de la imagen al 10% del ancho del contenedor */
-    height: auto; /* Mantiene la relación de aspecto */
-    object-fit: cover; /* Asegura que la imagen cubra su contenedor sin distorsión */
-}
-
-.card-title-verde {
-    font-size: 1.2rem; /* Ajusta el tamaño de la fuente del título */
-    color: #228B22; /* Color verde */
-}
-
-.card-text {
-    flex-grow: 1; /* Deja que el texto ocupe el espacio restante */
-    width: 96%; /* Ajusta el ancho del texto al 80% del contenedor */
-}
-
-/* Efecto hover tarjeta */
-.card:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-    background-color: #ffff;
-}
-
-.card-verde:hover {
-    background-color: #bef6bc;
-}
-
-/* cuerpo tarjeta */
-.card-body {
-    padding: 1rem;
-    padding-top: 1.5rem;
-}
-
-/* Ajuste imagen */
-.card-img-top {
-    height: 150px;
-    object-fit: contain;
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-    transition: transform 0.3s ease;
-    margin-top: 30px;
-}
-
-/* Efecto hover imagen */
-.card:hover .card-img-top {
-    transform: scale(1.1);
-}
-
-/* Decoraciones link */
-.card-link {
-    text-decoration: none; 
-    display: block;
+    font-size: 1.18rem;
+    /*margin-bottom: 1.5rem;*/
+    line-height: 1.6;
+    margin : 1.5rem;
 }
