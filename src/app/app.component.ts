@@ -4,13 +4,15 @@ import { BannerComponent } from './banner/banner.component';
 import { InfoCardsComponent } from './info-cards/info-cards.component';
 import { WelfareComponent } from "./welfare/welfare.component";
 import { AboutComponent } from "./about/about.component";
+import { DescriptionComponent } from './description/description.component';
 
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, RouterModule,
     BannerComponent,
-    InfoCardsComponent, 
+    InfoCardsComponent,
+    DescriptionComponent, 
     WelfareComponent, 
     AboutComponent],
   templateUrl: './app.component.html',
