@@ -1,0 +1,42 @@
+#welfare-hero {
+    /* background: linear-gradient(to bottom, rgba(34, 204, 35, 0.3), rgb(238, 241, 234)); */
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    margin: 2%;
+    margin-top: 0.5rem;
+    transform-origin: center center;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+   width: 95%;
+}
+
+.tittle {
+    text-align: center;
+    padding: 0.5rem;
+    color: #ffa420;
+}
+
+.text-content {
+    width: 50%;
+    padding: 1rem;
+}
+
+.carousel-content {
+    width: 40%;
+    text-align: right;
+}
+
+.carousel-inner img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 2%;
+}

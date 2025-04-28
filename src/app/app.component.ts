@@ -1,16 +1,20 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { BannerComponent } from './banner/banner.component';
 import { InfoCardsComponent } from './info-cards/info-cards.component';
+import { WelfareComponent } from "./welfare/welfare.component";
+import { AboutComponent } from "./about/about.component";
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, 
-            BannerComponent,
-            InfoCardsComponent],
+  imports: [RouterOutlet, RouterModule,
+    BannerComponent,
+    InfoCardsComponent, 
+    WelfareComponent, 
+    AboutComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'coonadoc';
