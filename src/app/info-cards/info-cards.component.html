@@ -1,17 +1,15 @@
-<div class="container-fluid py-4"> <!-- Usamos container-fluid para que ocupe todo el ancho disponible -->
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4 mx-3"> <!-- Modificamos el número de columnas en cada tamaño -->
+<div class="container-fluid py-4">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4 mx-3">
         <!-- Tarjetas -->
         <div class="col">
             <div class="card card-verde h-100">
-                <a href="https://www.ejemplo.com" class="card-link">
+                <a [href]="cards[0].link" class="card-link">
                     <div class="card-body">
-                        <!-- Título con la flecha -->
                         <h5 class="card-title-verde d-flex justify-content-between align-items-center">
-                            Oficina Virtual
-                            <i class="bi bi-arrow-right"></i> <!-- Icono de la flecha -->
+                            {{ cards[0].title }}
+                            <i class="bi bi-arrow-right"></i>
                         </h5>
-                        <!-- Imagen -->
-                        <img src="assets/cards_images/oficina_Virtual.png" class="card-img-top" alt="Imagen de ejemplo">
+                        <img [src]="cards[0].image" class="card-img-top" alt="{{ cards[0].title }}">
                     </div>
                 </a>
             </div>
@@ -19,13 +17,13 @@
 
         <div class="col">
             <div class="card card-naranja h-100">
-                <a href="https://www.ejemplo.com" class="card-link">
+                <a [href]="cards[1].link" class="card-link">
                     <div class="card-body">
                         <h5 class="card-title-naranja d-flex justify-content-between align-items-center">
-                            Mi Pago Amigo
+                            {{ cards[1].title }}
                             <i class="bi bi-arrow-right"></i>
                         </h5>
-                        <img src="assets/cards_images/oficina_Virtual.png" class="card-img-top" alt="Imagen de ejemplo">
+                        <img [src]="cards[1].image" class="card-img-top" alt="{{ cards[1].title }}">
                     </div>
                 </a>
             </div>
@@ -33,13 +31,13 @@
 
         <div class="col">
             <div class="card card-verde h-100">
-                <a href="https://www.ejemplo.com" class="card-link">
+                <a [href]="cards[2].link" class="card-link">
                     <div class="card-body">
                         <h5 class="card-title-verde d-flex justify-content-between align-items-center">
-                            Campus
+                            {{ cards[2].title }}
                             <i class="bi bi-arrow-right"></i>
                         </h5>
-                        <img src="assets/cards_images/oficina_Virtual.png" class="card-img-top" alt="Imagen de ejemplo">
+                        <img [src]="cards[2].image" class="card-img-top" alt="{{ cards[2].title }}">
                     </div>
                 </a>
             </div>
@@ -47,13 +45,13 @@
 
         <div class="col">
             <div class="card card-naranja h-100">
-                <a href="https://www.ejemplo.com" class="card-link">
+                <a [href]="cards[3].link" class="card-link">
                     <div class="card-body">
                         <h5 class="card-title-naranja d-flex justify-content-between align-items-center">
-                            App Coonadoc
+                            {{ cards[3].title }}
                             <i class="bi bi-arrow-right"></i>
                         </h5>
-                        <img src="assets/cards_images/oficina_Virtual.png" class="card-img-top" alt="Imagen de ejemplo">
+                        <img [src]="cards[3].image" class="card-img-top" alt="{{ cards[3].title }}">
                     </div>
                 </a>
             </div>
