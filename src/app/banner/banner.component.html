@@ -2,7 +2,7 @@
     <div class="overlay"></div>
     <div class="banner-content">
       <h1>{{ banners[currentIndex].title }}</h1>
-      <p>{{ banners[currentIndex].text }}</p>
+      <p class="lead">{{ banners[currentIndex].text }}</p>
       <a href="#" class="btn btn-primary banner-btn-primary">Contacto</a>
       <a [routerLink]="banners[currentIndex].link" class="btn btn-outline-light banner-btn-secundary">Ver más</a>
     </div>

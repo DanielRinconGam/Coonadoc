@@ -1,3 +1,4 @@
+/* Banner */
 .banner {
     background-size: cover;
     background-position: center;
@@ -9,6 +10,7 @@
     border-bottom-right-radius: 100% 20%;
 }
 
+/* Overlay banner */
 .overlay {
     position: absolute;
     top: 0;
@@ -18,25 +20,43 @@
     background: rgba(0, 0, 0, 0.3);
 }
 
+/* Contenido banner */
 .banner-content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    white-space: nowrap;
 }
 
+/* Titulo banner */
 .banner h1 {
-    font-size: 4.3rem;
-    font-weight: 700;
-    margin-bottom: 20px;
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
 }
 
+/* texto banner */
+.lead {
+    font-size: 1.35rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Primer boton banner */
 .banner-btn-primary {
     background-color: #22CC23 !important;
+    font-weight: 450;
     color: white;
+    
     border: none;
+    border-radius: 0px;
+    font-size: 1.2rem;
+    
     margin: 10px;
+    padding: 0.5rem 2rem;
 }
 
 .banner-btn-primary:hover {
@@ -44,23 +64,31 @@
     border: none;
 }
 
+/* Segundo boton banner */
 .banner-btn-secundary {
     background-color: #f1fdf0 !important;
+    font-weight: 450;
     color: #22CC23;
+    
     border: none;
+    border-radius: 0px;
+    font-size: 1.2rem;
+    
     margin: 10px;
+    padding: 0.5rem 2rem;
 }
 
 .banner-btn-secundary:hover {
     background-color: #defbdd !important;
     color: #228B22;
+    
     border: none;
-    margin: 10px;
 }
 
+/* Botones galeria banner*/
 .gallery-controls {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -80,6 +108,7 @@
     background-color: #22CC23;
 }
 
+/* Imagenes banner*/
 .banner .image {
     position: absolute;
     top: 0;
@@ -92,4 +121,12 @@
 
 .banner .image.active {
     opacity: 1;
+}
+
+/* Responsive banner*/
+@media (max-width: 1000px) {
+    .banner-content {
+        white-space: normal; 
+        padding: 0 5px; 
+    }
 }
