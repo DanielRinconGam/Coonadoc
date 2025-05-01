@@ -17,17 +17,17 @@ export class InfoCardsComponent {
     },
     {
       title: 'Mi Pago Amigo',
-      image: 'assets/cards_images/oficina_Virtual.png',
+      image: 'assets/cards_images/mi_pago_amigo.png',
       link: 'https://www.ejemplo.com'
     },
     {
       title: 'Campus',
-      image: 'assets/cards_images/oficina_Virtual.png',
+      image: 'assets/cards_images/campus.png',
       link: 'https://www.ejemplo.com'
     },
     {
       title: 'App Coonadoc',
-      image: 'assets/cards_images/oficina_Virtual.png',
+      image: 'assets/cards_images/app_coonadoc.png',
       link: 'https://www.ejemplo.com'
     }
   ];
