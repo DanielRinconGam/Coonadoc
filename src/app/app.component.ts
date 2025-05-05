@@ -5,6 +5,7 @@ import { InfoCardsComponent } from './info-cards/info-cards.component';
 import { WelfareComponent } from "./welfare/welfare.component";
 import { AboutComponent } from "./about/about.component";
 import { DescriptionComponent } from './description/description.component';
+import { InfoWindowsComponent } from './info-windows/info-windows.component';
 
 
 @Component({
@@ -13,8 +14,9 @@ import { DescriptionComponent } from './description/description.component';
     BannerComponent,
     InfoCardsComponent,
     DescriptionComponent, 
+    AboutComponent,
     WelfareComponent, 
-    AboutComponent],
+    InfoWindowsComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
