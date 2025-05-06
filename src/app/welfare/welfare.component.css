@@ -1,71 +1,116 @@
-/* Estilos principales para el contenedor */
-#welfare-hero {
-    border-radius: 5px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    background-color: #fff;
-    position: relative;
-    z-index: 1;
-    margin-top: 0.5rem;
-    transform-origin: center center;
-    min-height: 250px;
+.final-welfare {
+    background-color: #FFA420;
+    padding: 0;
+  }
+  
+  .final-container {
     display: flex;
+    margin: 0;
+    padding: 0;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 1rem; /* Agregado padding interno */
+  }
+  
+  .final-carousel-wrapper {
+    flex: 1.2;
+    min-width: 0;
+    
+  }
+  
+  .final-content {
+    flex: 0.8;
+    color: white;
+    margin: 2rem;
+  }
+  
+.final-title {
+    font-size: 3.5em;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
 }
-
-/* Estilo del título */
-.tittle {
-    text-align: center;
-    color: #ffa420;
-    font-weight: bold;
-    font-size: 2.5rem;
-    line-height: 1.6;
-    margin: 1.5rem 0;
-}
-
-/* Estilo del texto */
-.text-content {
-    width: 50%;
-    padding: 1rem;
+  
+  
+.lead p {
     font-size: 1.35rem;
+    margin-bottom: 1.5rem;
     line-height: 1.6;
 }
-
-/* Contenedor del carrusel */
-.carousel-content {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Imágenes del carrusel */
-.carousel-inner img {
-    width: 80%;
-    height: 300px;
+  
+  .carousel-inner {
+    border-radius: 0px;
+    overflow: hidden;
+  }
+  
+  .carousel-item img {
+    height: 550px;
+    width: 100%;
     object-fit: cover;
-    border-radius: 5px;
-}
+    object-position: center;
 
-/* RESPONSIVE para pantallas pequeñas */
-@media (max-width: 768px) {
-    #welfare-hero {
-        flex-direction: column;
-        align-items: center;
+  }
+  
+  .final-divider {
+    border: 0;
+    height: 2px;
+    margin: 0;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1200px) {
+    .final-container {
+      gap: 3rem;
     }
-
-    .text-content,
-    .carousel-content {
-        width: 100%;
-        text-align: center;
+    
+    .carousel-item img {
+      height: 450px;
     }
-
-    .carousel-inner img {
-        width: 90%;
-        height: auto;
-        margin-top: 1rem;
+  }
+  
+  @media (max-width: 992px) {
+    .final-container {
+      flex-direction: column;
     }
-}
+    
+    .final-content {
+      order: -1;
+      text-align: center;
+      padding: 0 1rem;
+    }
+    
+    .final-title::after {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .carousel-item img {
+      height: 400px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .final-welfare {
+      padding: 3rem 0;
+    }
+    
+    .final-title {
+      font-size: 2rem;
+    }
+    
+    .final-description p {
+      font-size: 1.1rem;
+    }
+    
+    .carousel-item img {
+      height: 350px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .carousel-item img {
+      height: 280px;
+    }
+    
+    .final-title {
+      font-size: 1.8rem;
+    }
+  }

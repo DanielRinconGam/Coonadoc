@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   templateUrl: './welfare.component.html',
   styleUrls: ['./welfare.component.css']})
 export class WelfareComponent {
-
+  
 }
