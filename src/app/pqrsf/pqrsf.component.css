@@ -1,0 +1,81 @@
+
+#pqrsf {
+    margin: 2rem auto;
+    overflow: hidden;
+}
+
+#pqrsf h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    
+    color: #22CC23;
+    margin-bottom: 1.5rem;
+ 
+    position: relative;
+    padding-bottom: 10px;
+}
+
+#pqrsf h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 5px;
+    background-color: #FFA420;
+}
+
+#pqrsf .lead {
+    padding: 8px 0; 
+    position: relative;
+    color: #505050;
+    line-height: 1.6; 
+    font-size: 1.35rem;
+    list-style-type: none;
+    margin-left: 0;
+}
+
+#pqrsf .btn-primary {
+    background: #22CC23;
+    border: none;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+    border-radius: 0px;
+}
+
+#pqrsf .btn-primary:hover {
+    background: #228B22;
+    transform: translateY(-2px);
+}
+
+#pqrsf .btn-primary i {
+    transition: transform 0.3s ease;
+}
+
+#pqrsf .btn-primary:hover i {
+    transform: translateX(3px);
+}
+
+#pqrsf .text-muted {
+    color: #718096 !important;
+    font-size: 0.6rem;
+}
+
+@media (max-width: 768px) {
+    #pqrsf {
+        margin: 1rem;
+        padding: 2rem 1rem !important;
+    }
+    
+    #pqrsf .lead {
+        max-width: 100%;
+        font-size: 1rem;
+    }
+    
+    #pqrsf .btn-primary {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
