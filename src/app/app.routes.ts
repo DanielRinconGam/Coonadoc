@@ -3,6 +3,7 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './about/about.component';
 import { OnlineComponent } from './pages/online/online.component';
+import { ContactComponent } from './pages/contact/contact.component';
 import { FormatsComponent } from './pages/formats/formats.component';
 
 export const routes: Routes = [
@@ -10,5 +11,6 @@ export const routes: Routes = [
     { path: 'inicio', redirectTo: '', pathMatch: 'full' },
     { path: 'about', component: AboutComponent},
     { path: 'online', component: OnlineComponent },
-    { path: 'services/formats', component: FormatsComponent }
+    { path: 'services/formats', component: FormatsComponent },
+    {path: 'contact', component: ContactComponent},
   ];
