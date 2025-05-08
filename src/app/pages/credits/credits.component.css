@@ -1,0 +1,44 @@
+.card-custom {
+    border-radius: 0px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    margin: 10px;
+    transform-origin: center center;
+    min-height: 250px;
+    border: 1px solid #e2e2e2;
+  }
+
+.card-custom:hover {
+    transform: translateY(-5px);
+}
+
+.icon-large {
+    font-size: 4rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    display: inline-block;
+    color: #FFA420; 
+}
+
+.btn-custom {
+    background-color: #22CC23;
+    color: white;
+    border: none;
+    transition: transform 0.2s, background-color 0.2s;
+    border-radius: 0px
+}
+
+.btn-custom:hover {
+    background-color: #228B22;
+    color: white;
+    transform: scale(1.05);
+    border-radius: 0px;
+}
+
+.lead {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
