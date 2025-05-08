@@ -1,0 +1,68 @@
+iframe{
+    width: 100%;
+    height: 20rem;
+}
+
+.lead{
+    font-size: 1.35rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.col-lg-5{
+    background-color: #22CC23;
+    border-radius: 0%;
+    padding: 5%;
+    color: white;
+}
+
+h2{
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #FFA420;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h4{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+form label{
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+form input{
+    border-radius: 0.5rem;
+}
+
+form input:focus, form textarea:focus{
+    border: 2px solid #FFA420;
+    box-shadow: none;
+}
+
+form button{
+    background-color: #FFA420;
+    color: white;
+    border-radius: 0;
+    font-size: 1.5rem;
+    border: none;
+}
+
+form button:hover{
+    background-color: #f98007;
+    color: white;
+    border-radius: 0;
+    font-size: 1.5rem;
+    border: none;
+}
+
+#message{
+    resize: none;
+}

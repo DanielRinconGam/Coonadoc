@@ -7,6 +7,7 @@ import { WelfareComponent } from "../../welfare/welfare.component";
 import { AboutComponent } from "../../about/about.component";
 import { DescriptionComponent } from '../../description/description.component';
 import { InfoWindowsComponent } from '../../info-windows/info-windows.component';
+import {ContactComponent} from '../contact/contact.component';
 
 @Component({
   selector: 'app-home',
@@ -16,7 +17,8 @@ import { InfoWindowsComponent } from '../../info-windows/info-windows.component'
     DescriptionComponent, 
     AboutComponent,
     WelfareComponent, 
-    InfoWindowsComponent],
+    InfoWindowsComponent,
+  ContactComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
